@@ -30,27 +30,17 @@ using namespace std;
 
 int getPairsCount(int arr[], int n, int k) {
         
-    int maxNo = INT_MIN, totalPairs = 0;
+    unordered_map<int,int> m;
+    int totalPair = 0;
 
-    if(n==1) return 0;
+    for(int i = 0; i < n; i++) m[arr[i]]++;
 
-    for(int i = 0; i < n; i++) maxNo = max(maxNo, arr[i]);
-    
-    int newArr[maxNo + 1] = {0};
-    
-    for(int i = 0; i < n; i++) if(arr[i] < k) newArr[arr[i]]++;
-    
-    for(int i = 0; i < n; i++){
-        int needed = k - arr[i];
-        if(newArr[needed] && needed > 0 ){
-            cout<< "pairs are: "<< arr[i] <<" "<< needed <<endl;
-            newArr[arr[i]]--;
-            totalPairs += newArr[needed];
-        }
-        else continue;
+    for (int i = 0; i < n; i++){
+        totalPair += m[k - arr[i]];
+        if(k - arr[i]==arr[i]) totalPair --;
     }
     
-    return totalPairs;
+    return totalPair / 2;
 }
  
 int main()
