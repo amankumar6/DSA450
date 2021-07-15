@@ -2,6 +2,8 @@
     "C_Cpp.errorSquiggles": "Disabled",
     "files.associations": {
         "algorithm": "cpp",
-        "xstring": "cpp"
+        "xstring": "cpp",
+        "unordered_map": "cpp",
+        "unordered_set": "cpp"
     }
 }
