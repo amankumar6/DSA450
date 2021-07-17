@@ -6,6 +6,7 @@
         "unordered_map": "cpp",
         "unordered_set": "cpp",
         "random": "cpp",
-        "vector": "cpp"
+        "vector": "cpp",
+        "iostream": "cpp"
     }
 }
