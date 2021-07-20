@@ -11,6 +11,9 @@
         "xutility": "cpp",
         "string": "cpp",
         "utility": "cpp",
-        "xiosbase": "cpp"
+        "xiosbase": "cpp",
+        "stack": "cpp",
+        "queue": "cpp",
+        "ostream": "cpp"
     }
 }
