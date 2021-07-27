@@ -29,13 +29,25 @@
  
 using namespace std;
 
+int subsequences(string s){
+    int len = s.length();
+
+    for(int i = 0; i < len; i++){
+        string temp = "";
+        for (int j = i; j < len; j++)
+        {
+            temp += s[j];
+            con(temp);
+        }
+    }
+}
+ 
 int main()
 {
     fast;
 
-    T{
-        c(n);
-        cout << n/3 << " " << n/3 + 1;
-    }
+    string s = "ABCD";
+
+    subsequences(s);
     return 0;
 }
