@@ -4,7 +4,7 @@
 #define l(a,n)                  ll a=n;
 #define d(a,n)                  double a=n;
 #define s(a)                    string a;
-#define c(a)                    ll a; cin>>a;a
+#define c(a)                    ll a; cin>>a;
 #define cd(a)                   double a; cin>>a;
 #define cs(a)                   string a; cin>>a;
 #define ci(a)                   cin>>a
